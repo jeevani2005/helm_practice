@@ -32,7 +32,7 @@ jobs:
           context: ./BACKEND
           file: ./BACKEND/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-prac-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/helmkillback:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./FRONTEND
           file: ./FRONTEND/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-prac-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/helmkillfront:latest
